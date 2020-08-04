@@ -1,9 +1,18 @@
+:root {
+    --background: white;
+    --foreground: black;
+    --accent: white;
+}
+
 html, body {
     margin: 0;
     padding: 0;
 
-    background: #212121;
-    color: white;
+    background: var(--background);
+    color: var(--foreground);
+
+    font-family: sans-serif;
+    font-weight: 100;
 }
 
 body {
@@ -15,9 +24,17 @@ body {
 
 .header {
     width: 100%;
-    height: 5rem;
-    background: #353535;
-    border-bottom: 1px solid #212121;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    background: var(--accent);
+    border-bottom: 1px solid var(--background)
+}
+
+.header>h3 {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    vertical-align: center;
 }
 
 .grid {
@@ -40,6 +57,34 @@ body {
 }
 
 .grid > a {
-    border: 2px solid #212121;
-    background: #303030;
+    background: white;
+    position: relative;
+    border: 2px solid var(--background);
+
+    color: white;
+    text-decoration: none;
+}
+
+.grid > a > span {
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+}
+
+.grid > a > span:first-child{
+    position: absolute;
+    top: 10px;
+}
+
+.grid > a > span:last-child{
+    position: absolute;
+    bottom: 10px;
+}
+
+.grid > a > img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 33%;
 }
