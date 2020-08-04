@@ -7,43 +7,43 @@ var links = [
     },
     {
         topText: "Random",
-        image: "",
+        image: "images/reddit.svg",
         bottomText: "Subreddit",
         href: "https://reddit.com/r/random"
     },
     {
         topText: "Useless",
-        image: "",
+        image: "images/uselessweb.svg",
         bottomText: "Websites",
         href: "https://theuselessweb.com"
     },
     {
         topText: "Random",
-        image: "",
+        image: "images/wikipedia.svg",
         bottomText: "Wikipedia article",
         href: "https://en.wikipedia.org/wiki/Special:Random"
     },
     {
         topText: "Random",
-        image: "",
-        bottomText: "Minecraft Wiki Article",
+        image: "images/minecraft-wiki.svg",
+        bottomText: "MC Wiki Article",
         href: "https://minecraft.gamepedia.com/Special:RandomRootpage"
     },
     {
         topText: "Random",
-        image: "",
+        image: "images/gallery.svg",
         bottomText: "Classic Art",
         href: "https://random-ize.com/random-art-gallery/#refresh"
     },
     {
         topText: "Make",
-        image: "",
+        image: "images/draw.svg",
         bottomText: "Random Art",
         href: "http://www.random-art.org/online/"
     },
     {
         topText: "Other",
-        image: "",
+        image: "images/random.svg",
         bottomText: "Random Stuff",
         href: "http://random.org"
     }
@@ -56,9 +56,9 @@ function addTile(obj) {
 
     var color = randomColor({
         format: "rgba",
-        luminosity: "light",
+        luminosity: "bright",
         hue: "blue",
-        alpha: 0.95
+        alpha: 0.5
     });
     link.style.backgroundColor = color;
 
