@@ -3,11 +3,11 @@
 
 if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
     var favicon = document.querySelector("link[rel='icon']");
-    favicon.href = "images/favicon_dark.png";
+    favicon.href = "images/appicons/favicon_dark.png";
 }
 else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
     var favicon = document.querySelector("link[rel='icon']");
-    favicon.href = "images/favicon_light.png";
+    favicon.href = "images/appicons/favicon_light.png";
 }
 
 
@@ -16,49 +16,49 @@ else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)")
 var links = [
     {
         topText: "Random",
-        image: "images/youtube.svg",
+        image: "images/icons/youtube.svg",
         bottomText: "YouTube Videos",
         href: "https://random-ize.com/random-youtube/#refresh2"
     },
     {
         topText: "Random",
-        image: "images/reddit.svg",
+        image: "images/icons/reddit.svg",
         bottomText: "Subreddit",
         href: "https://reddit.com/r/random"
     },
     {
         topText: "Useless",
-        image: "images/uselessweb.svg",
+        image: "images/icons/uselessweb.svg",
         bottomText: "Websites",
         href: "https://theuselessweb.com"
     },
     {
         topText: "Random",
-        image: "images/wikipedia.svg",
+        image: "images/icons/wikipedia.svg",
         bottomText: "Wikipedia article",
         href: "https://en.wikipedia.org/wiki/Special:Random"
     },
     {
         topText: "Random",
-        image: "images/minecraft-wiki.svg",
+        image: "images/icons/minecraft-wiki.svg",
         bottomText: "MC Wiki Article",
         href: "https://minecraft.gamepedia.com/Special:RandomRootpage"
     },
     {
         topText: "Random",
-        image: "images/gallery.svg",
+        image: "images/icons/gallery.svg",
         bottomText: "Classic Art",
         href: "https://random-ize.com/random-art-gallery/#refresh"
     },
     {
         topText: "Make",
-        image: "images/draw.svg",
+        image: "images/icons/draw.svg",
         bottomText: "Random Art",
         href: "http://www.random-art.org/online/"
     },
     {
         topText: "Other",
-        image: "images/random.svg",
+        image: "images/icons/random.svg",
         bottomText: "Random Stuff",
         href: "http://random.org"
     }
