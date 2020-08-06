@@ -1,3 +1,18 @@
+// Set favicon depending on theme
+//===========================================================================
+
+if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    var favicon = document.querySelector("link[rel='icon']");
+    favicon.href = "images/favicon_dark.png";
+}
+else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches) {
+    var favicon = document.querySelector("link[rel='icon']");
+    favicon.href = "images/favicon_light.png";
+}
+
+
+// Init link tiles
+//===========================================================================
 var links = [
     {
         topText: "Random",
@@ -51,8 +66,8 @@ var links = [
 
 function addTile(obj) {
     var link = document.createElement("a");
-    link.href = obj.href;
     link.target = "_blank";
+    if (obj.href) link.href = obj.href;
 
     var color = randomColor({
         format: "rgba",
@@ -60,16 +75,16 @@ function addTile(obj) {
         hue: "blue",
         alpha: 0.5
     });
+
     link.style.backgroundColor = color;
 
     var topSpan = document.createElement("span");
-    topSpan.innerText = obj.topText;
-
     var image = document.createElement("img");
-    image.src = obj.image;
-
     var bottomSpan = document.createElement("span");
-    bottomSpan.innerText = obj.bottomText;
+    
+    if (obj.topText) topSpan.innerText = obj.topText;
+    if (obj.image) image.src = obj.image;
+    if (obj.bottomText) bottomSpan.innerText = obj.bottomText;
 
     link.appendChild(topSpan);
     link.appendChild(image);
