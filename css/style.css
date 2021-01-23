@@ -17,7 +17,7 @@ html, body {
 
 body {
     width: 100%;
-    max-width: 1366px;
+    max-width: 750px;
 
     margin: auto;
 }
@@ -52,6 +52,38 @@ body {
 
     background: url("../images/logo.png");
     background-size: 100% 100%;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul li {
+    display: inline;
+    vertical-align: middle;
+}
+
+nav ul li.right {
+    float: right;
+}
+
+nav ul img {
+    height: 2em;
+}
+
+nav ul h3 {
+    display: inline;
+    font-size: 1.5em;
+    padding-left: 0.5em;
 }
 
 .grid {
